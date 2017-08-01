@@ -1,0 +1,18 @@
+{
+  "name": "bot",
+  "version": "0.0.1",
+  "description": "Bot Rayado",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "ealejandrog1",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cron": "^1.2.1",
+    "express": "^4.15.3",
+    "mysql": "^2.13.0",
+    "request": "^2.81.0"
+  }
+}
