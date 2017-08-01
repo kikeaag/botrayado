@@ -4,7 +4,7 @@ const request = require('request');
 var base = require('./base.js');
 var mysql = require('mysql');
 
-var port = process.env.port || 3000;
+var port = process.env.PORT || 3000;
 
 const APP_TOKEN = 'EAAEPZAGMb78IBABAhfxNTDAlEjuOUIFuuc00d1uNWpelO4UOygq7ZBRFoSArBKHl3WA1j7ZCBhcYaCKm1tYet9kRJW8dkUFWTswx8gE2PUQNPYd6Stncb8OObp3e8h3JwfS9BxN2LWhAskLLjt5OMZCd5VwQnn8f6ST815Xz4gZDZD';
 

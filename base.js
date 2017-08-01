@@ -1,11 +1,7 @@
 var express = require('express');
 var mysql = require('mysql');
 
-function consultarNotificaciones(SenderID, callback){
-	var res = "";
-	try
-	{
-		var connection = mysql.createConnection({
+var connection = mysql.createConnection({
 
 		host : 'localhost' ,
 		user : 'root' ,
@@ -14,6 +10,10 @@ function consultarNotificaciones(SenderID, callback){
 
 	});
 
+function consultarNotificaciones(SenderID, callback){
+	var res = "";
+	try
+	{
 
 	connection.connect(function(error){
 	   if(error){
@@ -62,15 +62,6 @@ function insertNotificacion(SenderID, callback){
 	var res = "";
 	try
 	{
-		var connection = mysql.createConnection({
-
-		host : 'localhost' ,
-		user : 'root' ,
-		password : '',
-		database : 'notificaciones_botrayado'
-
-	});
-
 
 	connection.connect(function(error){
 	   if(error){
@@ -113,15 +104,6 @@ function deleteNotificacion(SenderID, callback){
 	var res = "";
 	try
 	{
-		var connection = mysql.createConnection({
-
-		host : 'localhost' ,
-		user : 'root' ,
-		password : '',
-		database : 'notificaciones_botrayado'
-
-	});
-
 
 	connection.connect(function(error){
 	   if(error){
@@ -164,15 +146,6 @@ function consultarNotificacionesActivadas(callback){
 	var resultado = "";
 	try
 	{
-		var connection = mysql.createConnection({
-
-		host : 'localhost' ,
-		user : 'root' ,
-		password : '',
-		database : 'notificaciones_botrayado'
-
-	});
-
 
 	connection.connect(function(error){
 	   if(error){
